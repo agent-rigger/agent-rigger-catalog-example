@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "artifact",
+    "id": "skill:hello-rigger",
+    "nature": "skill",
+    "source": "external",
+    "targets": ["claude"],
+    "scopes": ["user", "project"]
+  },
+  {
+    "kind": "artifact",
+    "id": "agent:demo",
+    "nature": "agent",
+    "source": "external",
+    "targets": ["claude"],
+    "scopes": ["user", "project"]
+  }
+]
