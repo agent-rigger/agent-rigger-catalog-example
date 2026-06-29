@@ -1,18 +1,30 @@
-[
-  {
-    "kind": "artifact",
-    "id": "skill:hello-rigger",
-    "nature": "skill",
-    "source": "external",
-    "targets": ["claude"],
-    "scopes": ["user", "project"]
+{
+  "meta": {
+    "name": "agent-rigger-catalog-example",
+    "required": [],
+    "recommended": ["pack:demo"]
   },
-  {
-    "kind": "artifact",
-    "id": "agent:demo",
-    "nature": "agent",
-    "source": "external",
-    "targets": ["claude"],
-    "scopes": ["user", "project"]
-  }
-]
+  "entries": [
+    {
+      "kind": "artifact",
+      "id": "skill:hello-rigger",
+      "nature": "skill",
+      "targets": ["claude"],
+      "scopes": ["user", "project"]
+    },
+    {
+      "kind": "artifact",
+      "id": "agent:demo",
+      "nature": "agent",
+      "targets": ["claude"],
+      "scopes": ["user", "project"]
+    },
+    {
+      "kind": "pack",
+      "id": "pack:demo",
+      "targets": ["claude"],
+      "scopes": ["user", "project"],
+      "members": ["skill:hello-rigger", "agent:demo"]
+    }
+  ]
+}
